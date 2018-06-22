@@ -119,7 +119,7 @@ function createPdvToCsv(req, res) {
                         finalResult = finalResult + oneLineResult + "\n";
                     }
 
-                    fs.writeFile("./public/" + finalFilePath, finalResult ,function(err){
+                    fs.writeFile("./" + finalFilePath, finalResult ,function(err){
                         if(err) throw(err);
                         console.log(" ================================================= ");
                         console.log(" ********* PDF TO CSV CONVERTOR RESULT *********** ");
